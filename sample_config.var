@@ -1,0 +1,4 @@
+# Config for Nextcloud repair scripts
+
+# Username of the owner of the PHP process
+VAR_PHP_USER=
