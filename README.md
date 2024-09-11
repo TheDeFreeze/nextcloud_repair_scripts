@@ -1,18 +1,19 @@
 # nextcloud_repairs
 Collection of scripts that fix common faults listed in Administration Settings
 
-This works with the default nextcloud install location of /var/www/nextcloud
+## To use:
+Rename sample_config.var to config.var
+Put in the PHP username the PHP process is running as and the Nextcloud install location(no forward slah at the end)
 
-To use, rename sample_config.var to config.var and put in the PHP username the PHP process is running as.
 
 
 # occ-repair_mime.sh
 
-Fixes this error:
+## Fixes this error:
 One or more mimetype migrations are available. Occasionally new mimetypes are added to better handle certain file types. Migrating the mimetypes take a long time on larger instances so this is not done automatically during upgrades. Use the command occ maintenance:repair --include-expensive to perform the migrations.
 
 
 # occ-missing_indices.sh
 
-Fixes this error:
+## Fixes this error:
 Some indices are missing in the database. Because adding indexes to large tables may take some time, they have not been added automatically. By executing “occ db: add-missing-indices”, missing indexes can be added manually while the instance is running. Once the indexes have been added, queries to these tables are usually faster.

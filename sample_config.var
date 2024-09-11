@@ -2,3 +2,8 @@
 
 # Username of the owner of the PHP process
 VAR_PHP_USER=
+
+
+# Nextcloud install location. Default is /var/www/nextcloud
+
+VAR_NC_LOCATION=
